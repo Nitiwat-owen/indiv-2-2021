@@ -1,0 +1,15 @@
+## env dev
+@url = http://localhost:8080/api/v1/auth
+
+@username = admin
+@password = P@ssw0rd
+
+## Login
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "username": "test02",
+    "password": "P@ssw0rd02"
+}
+###

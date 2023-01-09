@@ -1,0 +1,18 @@
+application:
+  port: 8080
+  environment: "local"
+  secretKey: "ThisIsMySecretKey"
+
+postgres:
+  port: 6001
+  user: "INDIV"
+  password: "password"
+  host: "localhost"
+  database: "INDIV_DB"
+  poolSize: 10
+
+smtp:
+  host: "smtp.gmail.com"
+  port: 587
+  from: "indivmailtest@gmail.com"
+  password: "indiv12345password"

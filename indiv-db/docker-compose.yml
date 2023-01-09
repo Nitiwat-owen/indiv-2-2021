@@ -1,0 +1,15 @@
+services:
+  db:
+    image: indiv-db
+    container_name: indiv-db
+    environment:
+      POSTGRES_ROOT_PASSWORD: P@ssw0rd
+      POSTGRES_USER: INDIV
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: INDIV_DB
+    volumes:
+      - /var/lib/postgresql/data
+    expose:
+      - "5432"
+    ports:
+      - "6001:5432"

@@ -1,0 +1,53 @@
+## env dev
+@url = http://localhost:8080/api/v1/users
+
+@username = test02
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTEwODE2NDQsImlzcyI6InRlc3QwMiJ9.VleXDPDLN3WZWSPc6My2q3BH6v8WVe8B5tRK-Fs9opU
+
+## Get User
+GET {{url}}/{{username}}
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+
+}
+###
+
+## Get Users
+GET {{url}}
+Content-Type: application/json
+
+{
+    
+}
+###
+
+## Register User
+POST {{url}}/register
+Content-Type: application/json
+
+{
+    "username": "test05",
+    "email": "test05@gmail.com",
+    "password": "P@ssw0rd05"
+}
+###
+
+## Update User
+PUT {{url}}/{{username}}
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "P@ssw0rd"
+}
+###
+
+## Delete User
+DELETE  {{url}}/{{username}}
+Content-Type: application/json
+
+{
+}
+###

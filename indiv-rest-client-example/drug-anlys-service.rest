@@ -1,0 +1,65 @@
+## env dev
+@url = http://localhost:8080/api/v1/drug
+
+@infoId = 1
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTEyMTQwMDQsImlzcyI6InRlc3QwMSJ9.mIQD02HeIEEGnJIHiTmyJU9zj3gcCWDsGpYR4m9ClUU
+
+## Binding Affinity Prediction
+GET {{url}}/bindingAffinityPrediction/page=1/limit=10
+Content-Type: application/json
+
+{
+
+}
+###
+
+# Get DataAnlysInfo
+GET {{url}}/{{infoId}}
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+
+}
+###
+
+## Sort Binding Affinity Prediction
+GET {{url}}/bindingAffinityPrediction?page=2&limit=3
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+
+}
+###
+
+## Search BindingAffinity
+POST {{url}}/searchBindingAffinity
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "filter": [
+        {
+            "fieldName": "infoId",
+            "fieldValue": "1"
+        },
+        {
+            "fieldName": "bindingAffinity",
+            "condition": ">=",
+            "fieldValue": "2"
+        },
+        {
+            "fieldName": "compoundID",
+            "condition": "=",
+            "fieldValue": "CHEMBL108"
+        }
+    ],
+    "paging": {
+        "startIndex": 1,
+        "fetchSize": 2,
+        "sortBy": "ิbindingAffinity",
+        "sortAsc": true
+    }
+}
+###

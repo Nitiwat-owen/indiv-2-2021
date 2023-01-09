@@ -1,0 +1,9 @@
+## env dev
+@url = http://localhost:8080/api/v1
+
+GET {{url}}/sendMail
+Content-Type: application/json
+
+{
+
+}

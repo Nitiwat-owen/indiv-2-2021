@@ -1,0 +1,106 @@
+@import 'styles/fonts/kanit/kanit-fonts.css';
+* {
+  font-family: "Kanit", Helvetica, Arial, sans-serif !important;
+}
+body {
+  background-color: #faebf2;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+h1, h2, h3, h4, h5, h6, label { 
+  color: #d6638e!important; 
+}
+h1 {
+  font-weight: bold !important;
+  font-size: 21px !important;
+}
+h2 {
+  font-weight: bold !important;
+  font-size: 20px !important;
+}
+h3 {
+  font-weight: bold !important;
+  font-size: 19px !important;
+}
+h4 {
+  font-weight: bold !important;
+  font-size: 18px !important;
+}
+h5 {
+  font-weight: bold !important;
+  font-size: 17px !important;
+}
+h6 {
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+.MuiAvatar-root {
+  background-color: #d6638e!important;
+}
+.form-data .MuiFormControl-root, .form-data .MuiButton-root {
+  margin-top: 10px !important;
+}
+/* .drawer > .MuiSvgIcon-root > path {
+  color:#FFFFFF!important;
+  width: 45px;
+  height: 45px; 
+} */
+.modal .MuiDialogActions-root .MuiButton-root {
+  font-size: 15px!important;
+  font-weight: bold!important;
+	color: #FFFFFF!important;
+  background-color: #d6638e;
+  border-radius: 4px!important;
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+.table th {
+  padding: 0.6rem !important;
+  font-weight: bold !important;
+}
+.table td {
+  padding: 0.5rem !important;
+}
+.table thead th {
+  text-align: center !important;
+  font-weight: bold !important;
+}
+.table td,
+.table th {
+  border: 1px solid #dcdcdc !important;
+}
+.table td {
+  border-style: dashed !important;
+}
+.table tr:nth-of-type(odd) {
+  background-color: #edeeef;
+}
+.table tr:last-child th, tr:last-child td {
+  border: 0;
+}
+.table tfoot tr {
+  background-color: #FFF!important;
+}
+.text-center {
+  text-align: center!important;
+}
+.text-right {
+  text-align: right!important;
+}
+*::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #d6638e!important;
+  opacity: .7!important;
+}
+*::-moz-placeholder { /* Firefox 19+ */
+  color: #d6638e!important;
+}
+*:-ms-input-placeholder { /* IE 10+ */
+  color: #d6638e!important;
+}
+*:-moz-placeholder { /* Firefox 18- */
+  color: #d6638e!important;
+}
